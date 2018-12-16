@@ -9,7 +9,7 @@
   </ion-buttons>-->
   <ion-navbar color="primary">
     <ion-title>
-     Registráte
+     Regístrate
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -24,7 +24,7 @@
       <ion-list>
 
           <ion-item>
-              <ion-input type="text" placeholder="Username"></ion-input>
+              <ion-input type="text" placeholder="Nombre de usuario"></ion-input>
             </ion-item>
           </ion-list>
     </ion-col></ion-row>
@@ -36,18 +36,18 @@
       <ion-list>
 
           <ion-item>
-              <ion-input type="text" placeholder="Email"></ion-input>
+              <ion-input type="text" placeholder="Correo Electrónico"></ion-input>
             </ion-item>
           </ion-list>
     </ion-col></ion-row>
 
-    <ion-row style="margin-top: 5px">
+    <ion-row   style="margin-top: 5px">
       <ion-col>
     
           <ion-list>
     
               <ion-item>
-                  <ion-input type="text" placeholder="Country"></ion-input>
+                  <ion-input type="text" placeholder="País"></ion-input>
                 </ion-item>
               </ion-list>
         </ion-col></ion-row>
@@ -56,7 +56,7 @@
   <ion-col>
       <ion-list>
           <ion-item>
-          <ion-input type="password" placeholder="Password"></ion-input>
+          <ion-input type="password" placeholder="Contraseña"></ion-input>
         </ion-item>
   </ion-list>
 
@@ -68,7 +68,7 @@
   <ion-col>
       <ion-list>
           <ion-item>
-          <ion-input type="password" placeholder="Repeat your password"></ion-input>
+          <ion-input type="password" placeholder="Repite tu contraseña"></ion-input>
         </ion-item>
   </ion-list>
 
@@ -79,11 +79,31 @@
 <ion-row>
 <ion-col text-center>
 
-    <button ion-button color="primary" block >   Crear Cuenta     </button>
+    <button ion-button color="primary" block (click)="closeModal()" >   CREAR CUENTA     </button>
 
 
 </ion-col>
 
 </ion-row>
+
+<ion-row>
+  <ion-col text-center>
+  
+      <button ion-button color="google" block  >   REGISTRATE CON GOOGLE     </button>
+  
+  
+  </ion-col>
+  
+  </ion-row>
+
+  <ion-row>
+    <ion-col text-center>
+    
+        <button ion-button color="facebook" block  >   REGISTRATE CON FACEBOOK</button>
+    
+    
+    </ion-col>
+    
+    </ion-row>
 
 </ion-content>

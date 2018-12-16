@@ -14,7 +14,7 @@
 <!--Iniciar sesion con Facebook o google--> 
 <ion-row style="margin-top: 10px;height: 18px;">
   <ion-col text-center >
-    ingresa con
+    {{Lang.LOGIN_WITH}}
     </ion-col>
   
   </ion-row>
@@ -22,18 +22,18 @@
 <ion-row style="margin-right: 7px;">
   <ion-col text-center class="flex row center">
     <div class="logos " >
-        <ion-icon color="light" name="logo-facebook"></ion-icon>
+        <img src="assets/imgs/f.svg" width="60px" alt="">
     </div>
    
       <div class="logos" >
-      <ion-icon color="light" name="logo-google"></ion-icon>
+          <img src="assets/imgs/google.svg" width="60px" alt="">
       </div>
   </ion-col>
 </ion-row>
 
 <ion-row style="margin-top: 5px;height: 18px;">
     <ion-col text-center >
-      ó
+      {{Lang.OR}}
       </ion-col>
     
     </ion-row>
@@ -45,7 +45,7 @@
         <ion-list>
 
             <ion-item>
-                <ion-input type="text" placeholder="Username"></ion-input>
+                <ion-input type="text" [placeholder]="Lang.USER_NAME"></ion-input>
               </ion-item>
             </ion-list>
       </ion-col></ion-row>
@@ -54,7 +54,7 @@
     <ion-col>
         <ion-list>
             <ion-item>
-            <ion-input type="password" placeholder="Password"></ion-input>
+            <ion-input type="password" [placeholder]="Lang.PASSWORD"></ion-input>
           </ion-item>
     </ion-list>
 
@@ -65,7 +65,8 @@
 <ion-row>
 <ion-col text-center>
 
-      <button ion-button color="primary" block (click)="gotoHome()">   INGRESAR     </button>
+      <button ion-button color="primary" block (click)="gotoHome()">   
+          {{Lang.LOG_IN}}     </button>
 
 
 </ion-col>
@@ -75,7 +76,7 @@
 
 <ion-row style="margin-top: 5px;height: 18px; font-size: 10px">
     <ion-col text-center >
-     ¿Olvidaste tu constraseña?
+      {{Lang.FORGOT_YOUR_PASSWORD}}
       </ion-col>
     
     </ion-row>
@@ -84,7 +85,9 @@
 
     <ion-row>
 
-      <button style="position: absolute;bottom: 0px;left: 0px;; margin-bottom: 0px; height: 45px; z-index: 100;" ion-button  block color="primary" (click)="createAccount()"> CREAR CUENTA</button>
+      <button style="position: absolute;bottom: 0px;left: 0px;; margin-bottom: 0px; height: 45px; z-index: 100;" ion-button  block color="primary" (click)="createAccount()"> 
+        {{Lang.CREATE_ACCOUNT}}
+      </button>
 
 
 

@@ -8,20 +8,25 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { ModalLoginPage } from '../pages/modal-login/modal-login';
+import { ModalIniPage } from '../pages/modal-ini/modal-ini';
+import { LangPage } from '../pages/lang/lang';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage, LoginPage, ModalLoginPage
+    HomePage, LoginPage, ModalLoginPage, ModalIniPage, LangPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp,{
+      modalEnter: 'modal-slide-in',
+      modalLeave: 'modal-slide-out',
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage, LoginPage, ModalLoginPage
+    HomePage, LoginPage, ModalLoginPage, ModalIniPage, LangPage
   ],
   providers: [
     StatusBar,

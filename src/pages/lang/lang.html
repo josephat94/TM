@@ -1,0 +1,20 @@
+<ion-content class="contentlang">
+  <ion-row style="height:50px; padding:1rem; font-size: 18px; text-transform: uppercase; display: flex; align-items: center;margin-top: 30px">
+    <ion-col>
+      Language
+    </ion-col>
+  </ion-row>
+  <ion-row *ngFor="let lang of Langs; let i= index" style="height:50px; padding:1.5rem;border-bottom: 1px solid #CFCAC6;">
+    <ion-col class="radiobutton" style="height: 100%; display: flex; align-items: center;;">
+      <input [id]="lang.name" type="radio" (click)="selectLanguage(i);" name="lang" [value]="lang.id" />
+      <label [for]="lang.name">{{lang.name}}</label>
+    </ion-col>
+  </ion-row>
+  <ion-row *ngIf="LangSelected!=null" style="margin-top: 20px;">
+    <ion-col>
+      <button color="primary" ion-button block class="animate-gu" (click)="closeModal()">
+        Next
+      </button>
+    </ion-col>
+  </ion-row>
+</ion-content>

@@ -1,6 +1,5 @@
 // http://ionicframework.com/docs/theming/
 
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -15,22 +14,98 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
+.flex {
+  display: flex;
+}
 
+.row {
+  flex-direction: row;
+}
+.column {
+  flex-direction: column;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
+.mright {
+  margin-right: 15px;
+}
 
-.flex{
+.radiobutton {
+  width: 100%;
+  background: transparent;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.radiobutton {
+  input[type="radio"] {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.radiobutton {
+  label {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: transparent;
+    width: 100%;
+    color: #01111a;
+    cursor: pointer;
+  }
 }
 
-.row{
-    flex-direction: row;
+.radiobutton {
+  label::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    border-radius: 50%;
+    height: 30px;
+    border: 0px solid #01b4bc;
+    display: inline-block;
+    right: 0px;
+    background: transparent;
+    transition: all ease 0.3s;
+    cursor: pointer;
+  }
 }
-.column{
-    flex-direction: column;
+
+.radiobutton {
+  input[type="radio"]:checked + label {
+    color: #01b4bc;
+
+    transition: 0.3s;
+    &:before {
+      background-image: url("../assets/imgs/icons/check.svg");
+      background-size: cover;
+      border-radius: 0%;
+      border: none;
+      border: 0px solid #01b4bc;
+      animation: growup 0.4s;
+    }
+  }
 }
-.center{
-    justify-content: center;
-    align-items: center;
+@keyframes growup {
+  from {
+    transform: scaleY(0.009) scaleX(1.1);
+  }
+  to {
+    transform: scaleY(1) scaleX(1);
+  }
 }
-.mright{
-    margin-right: 15px;
+.animate-gu {
+  animation: gu 0.3s;
+}
+@keyframes gu {
+  from {
+    transform: scaleY(0.2) scaleX(0.8);
+  }
+  to {
+    transform: scaleY(1) scaleX(1);
+  }
 }

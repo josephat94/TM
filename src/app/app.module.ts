@@ -21,6 +21,7 @@ import { LangPage } from '../pages/lang/lang';
     IonicModule.forRoot(MyApp,{
       modalEnter: 'modal-slide-in',
       modalLeave: 'modal-slide-out',
+      menuType: 'push',
     })
   ],
   bootstrap: [IonicApp],

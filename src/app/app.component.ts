@@ -6,6 +6,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { ModalIniPage } from '../pages/modal-ini/modal-ini';
+import { HomeTuristaPage } from '../pages/home-turista/home-turista';
+import { HomePasajePage } from '../pages/home-pasaje/home-pasaje';
 @Component({
   templateUrl: 'app.html'
 })
@@ -20,5 +22,17 @@ export class MyApp {
       splashScreen.hide();
     });
   }
+goToLogin(){
+
+  this.rootPage= LoginPage
+}
+ goToTurista(){
+
+  this.rootPage=HomeTuristaPage;
+ }
+
+ goToPasaje(){
+   this.rootPage= HomePasajePage;
+ }
 }
 

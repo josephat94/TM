@@ -4,6 +4,7 @@ import { HomePage } from '../home/home';
 import { ModalLoginPage } from '../modal-login/modal-login';
 import {Lang_esp} from '../../util/Esp.js'
 import {Lang_eng} from '../../util/Eng'
+import { HomePasajePage } from '../home-pasaje/home-pasaje';
 /**
  * Generated class for the LoginPage page.
  *
@@ -29,8 +30,7 @@ Lang= true?Lang_esp.Login:Lang_eng.Login  ;
 
 
   gotoHome(){
-
-    this.navCtrl.setRoot(HomePage);
+    this.navCtrl.setRoot(HomePasajePage);
   }
 
   createAccount(){

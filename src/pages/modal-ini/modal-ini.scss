@@ -19,4 +19,24 @@ page-modal-ini {
     align-items: center;
     justify-content: center;
   }
+
+  .header{font-weight:400;text-transform: uppercase;color: #9F866B;	font-family: Montserrat;	font-size: 30px;	letter-spacing: 3px;	line-height: 37px;	text-align: center;}
+
+.header + p{
+  font-weight: 400;
+}
+p{
+  margin-top: 30px !important;
+}
+button{
+  margin-top: 30px !important;
+  text-transform: uppercase;
+}
+.Pasaje{
+  background-image: url('/assets/imgs/background_slides.png');
+  background-size: cover;
+  background-position: center;
+ background-repeat: no-repeat;
+}
+
 }

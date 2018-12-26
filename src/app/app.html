@@ -1,26 +1,59 @@
-<ion-menu [content]="mycontent" side="right">
+<ion-menu id="Pasajero" [content]="mycontent" side="right">
     <ion-header color="primary">
         <ion-toolbar color="primary">
-          <ion-title>Menu</ion-title>
+          <ion-title>Menu Pasaje</ion-title>
         </ion-toolbar>
       </ion-header>
       <ion-content>
         <ion-list>
-          <button ion-item menuToggle >
-            Home
+          <button ion-item menuToggle (click)="goToLogin()" >
+            Iniciar Sesión
           </button>
           <button ion-item menuToggle >
-            Friends
+            Rutas
           </button>
           <button ion-item menuToggle >
             Events
           </button>
+          <button ion-item menuToggle (click)="goToTurista()" >
+              Modo Turista
+            </button>
           <button ion-item menuToggle >
             Close Menu
           </button>
         </ion-list>
       </ion-content>
   </ion-menu>
+
+
+
+  <ion-menu id="Turista" [content]="mycontent" side="right">
+      <ion-header color="primary">
+          <ion-toolbar color="primary">
+            <ion-title>Menu Turista</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content>
+          <ion-list>
+            <button ion-item menuToggle (click)="goToLogin()" >
+              Iniciar Sesión
+            </button>
+            <button ion-item menuToggle >
+              Rutas
+            </button>
+            <button ion-item menuToggle >
+              Events
+            </button>
+
+            <button ion-item menuToggle  (click)="goToPasaje()" >
+                Modo Pasaje
+              </button>
+            <button ion-item menuToggle >
+              Close Menu
+            </button>
+          </ion-list>
+        </ion-content>
+    </ion-menu>
 
 
 <ion-nav #mycontent [root]="rootPage"></ion-nav>

@@ -10,11 +10,14 @@ import { LoginPage } from '../pages/login/login';
 import { ModalLoginPage } from '../pages/modal-login/modal-login';
 import { ModalIniPage } from '../pages/modal-ini/modal-ini';
 import { LangPage } from '../pages/lang/lang';
-
+import { HomePasajePage } from '../pages/home-pasaje/home-pasaje';
+import { HomeTuristaPage } from '../pages/home-turista/home-turista';
+import { UserInfoProvider } from '../providers/user-info/user-info';
+import { IonicStorageModule } from '@ionic/storage';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage, LoginPage, ModalLoginPage, ModalIniPage, LangPage
+    HomePage, LoginPage, ModalLoginPage, ModalIniPage, LangPage, HomePasajePage, HomeTuristaPage
   ],
   imports: [
     BrowserModule,
@@ -22,17 +25,19 @@ import { LangPage } from '../pages/lang/lang';
       modalEnter: 'modal-slide-in',
       modalLeave: 'modal-slide-out',
       menuType: 'push',
-    })
+    }),
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage, LoginPage, ModalLoginPage, ModalIniPage, LangPage
+    HomePage, LoginPage, ModalLoginPage, ModalIniPage, LangPage, HomePasajePage, HomeTuristaPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    UserInfoProvider
   ]
 })
 export class AppModule {}

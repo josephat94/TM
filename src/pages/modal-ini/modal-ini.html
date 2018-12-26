@@ -5,13 +5,22 @@
   </div>
   <ion-slides pager>
 
-    <ion-slide>
-      <h2>Pasaje</h2>
+    <ion-slide class="Pasaje">
+      <h2 class="header">Pasaje</h2>
+      <p>
+       Modo Pasaje te permite comprar boletos eletrónicos del tren para utilizar el servicio como medio de transporte.
+      </p>
+
+      <button ion-button color="primary" (click)="goToHomePasaje()" > COMPRAR BOLETOS </button>
     </ion-slide>
 
-    <ion-slide>
-      <h2>Turista</h2>
+    <ion-slide class="Turista">
+      <h2 class="header">Turista</h2>
+      <p>Modo Turista te permite comprar boletos y paquetes especiales para disfrutar de los diferentes destinos de la ruta del Tren Maya.</p>
+   
+      <button ion-button color="primary" (click)="goToHomeTurista()" > VER PAQUETES </button>
     </ion-slide>
+
 
 
   </ion-slides>

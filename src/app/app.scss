@@ -336,7 +336,7 @@ ion-icon {
     height: 1em;
   }
   &[class*="custom-like"] {
-    mask-image: url(../assets/imgs/icons/cora.png);
+    mask-image: url(../assets/imgs/icons/corazon.svg);
   }
   &[class*="custom-destinos"] {
     mask-image: url(../assets/imgs/icons/destinoss.svg);
@@ -357,4 +357,5 @@ ion-icon {
   &[class*="custom-share"] {
     mask-image: url(../assets/imgs/icons/share.svg);
   }
+
 }

@@ -1,0 +1,115 @@
+@import "../../../theme/variables.scss";
+page-mi-boleto {
+    background: #F1EFED;;
+.boleto-box{
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+}
+
+.padding{
+    padding: 15px;
+}
+
+.line{
+    height: 2px;	width: 100%;border: 1px solid #464A40;
+    opacity: .3;
+  }
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  
+    .logo{
+        width: 70%;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        text-transform: uppercase;
+        .fecha{
+            text-align: right;  
+            font-size: 15px;
+            color: $dorado;
+        }
+        .claveViaje{
+color:$verdeOscuro;
+text-transform: uppercase;
+        }
+    }
+
+}
+
+.origen-destino{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .info{
+        display: flex;
+        flex-direction: column;
+        font-size: 26px;
+        text-transform: uppercase;
+    .label{
+        font-size: 18px;
+        color: $dorado;
+    }  
+    .name{
+        color:$verdeOscuro;
+    }
+    
+    }
+}
+
+.data-complement{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        text-transform: uppercase;
+    .label{
+        font-size: 14px;
+        color: $dorado;
+    }  
+    .name{
+        color:$verdeOscuro;
+    }
+    
+    }
+
+}
+
+.username{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        text-transform: uppercase;
+    .label{
+        font-size: 14px;
+        color: $dorado;
+    }  
+    .name{
+        color:$verdeOscuro;
+    }
+    
+    } 
+}
+
+}

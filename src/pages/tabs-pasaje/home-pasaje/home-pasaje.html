@@ -1,0 +1,205 @@
+
+  <ion-content  class="HomePasaje animate-top" style=" background: #F1EFED;" >
+      <div class="arrow-back" *ngIf="DatosUser">
+          <ion-icon name="md-arrow-back" style="font-size:24px; margin-right: 10px;" (click)="back(2)">
+    
+          </ion-icon>
+          REGRESAR
+        </div>
+
+        <div class="arrow-back" *ngIf="DatosCompra">
+            <ion-icon name="md-arrow-back" style="font-size:24px; margin-right: 10px;" (click)="back(1)"></ion-icon>
+          REGRESAR
+          </div> 
+
+
+    <div style="width:100%; display: flex; justify-content: center;margin-top: 43px">
+      <img src="./assets/imgs/logo-login.svg" width="163px" alt="">
+    </div>
+
+
+    <div class="form-content" *ngIf="DatosViaje">
+      
+
+    <div class="label-form"> 
+      Datos de viaje
+    </div>
+<div class="boxsing">Origen</div>
+<ion-item class="inp-form">
+  <ion-select [(ngModel)]="Origen" interface="popover" style="width: 100%">
+    <ion-option value="Palenque">Palenque</ion-option>
+    <ion-option value="Tabasco">Tabasco</ion-option>
+  </ion-select>
+</ion-item>
+
+<div class="boxsing">Destino</div>
+<ion-item class="inp-form">
+  <ion-select [(ngModel)]="Destino" interface="action-sheet" style="width: 100%">
+    <ion-option value="Palenque">Palenque $70.00 MXN</ion-option>
+    <ion-option value="Tabasco">Tabasco $120.00 MXN</ion-option>
+  </ion-select>
+</ion-item>
+<div class="multiline">
+  <div class="inpcol">
+
+      <div class="boxsing">Personas</div>
+      <ion-item class="inp-form">
+        <ion-select [(ngModel)]="personas" interface="popover" style="width: 100%">
+          <ion-option value="1">1</ion-option>
+          <ion-option value="2">2</ion-option>
+          <ion-option value="3">3</ion-option>
+          <ion-option value="4">4</ion-option>
+          <ion-option value="5">5</ion-option>
+          <ion-option value="6">6</ion-option>
+        </ion-select>
+      </ion-item>
+  </div>
+
+  <div class="inpcol">
+
+      <div class="boxsing">Horario</div>
+      <ion-item class="inp-form">
+        <ion-select [(ngModel)]="Horario" interface="action-sheet" style="width: 100%">
+          <ion-option value="1">10: 00 hrs</ion-option>
+          <ion-option value="2">11: 00 hrs</ion-option>
+          <ion-option value="3">12: 00 hrs</ion-option>
+          <ion-option value="4">13: 00 hrs</ion-option>
+        </ion-select>
+      </ion-item>
+  </div>
+</div>
+<div class="boxsing">Salida</div>
+<ion-item class="inp-form date-f">
+ 
+  <ion-datetime displayFormat="MMM DD, YYYY " [(ngModel)]="Salida"></ion-datetime>
+</ion-item>
+
+<div *ngIf="!soloida" class="boxsing">Regreso</div>
+<ion-item  *ngIf="!soloida" class="inp-form date-f">
+ 
+  <ion-datetime displayFormat="MMM DD, YYYY " [(ngModel)]="Regreso"></ion-datetime>
+</ion-item>
+
+<ion-item class="toggle-form">
+  <ion-label>Solo Ida</ion-label>
+  <ion-toggle [(ngModel)]="soloida"></ion-toggle>
+</ion-item>
+
+<ion-item class="toggle-form">
+  <ion-label>Varios Destinos</ion-label>
+  <ion-toggle [(ngModel)]="Escalas"></ion-toggle>
+</ion-item>
+
+<div style="margin-top:10px">
+  <button ion-button block color="menu" (click)="fillUserData()">SIGUIENTE</button>
+</div>
+    </div>
+
+
+
+    <div class="datosUser animate-right" *ngIf="DatosUser">
+        <div class="form-content">
+            <div class="label-form"> 
+                Datos de Usuario
+              </div>
+        
+          <div class="boxsing">Nombre</div>
+                <ion-item class="inp-form">
+              <ion-input type="text"></ion-input>
+                </ion-item>
+        
+                <div class="boxsing">Apellido</div>
+                <ion-item class="inp-form">
+              <ion-input type="text"></ion-input>
+                </ion-item>
+        
+                <div class="boxsing">Genero</div>
+                <ion-item class="inp-form">
+                  <ion-select [(ngModel)]="Sexo" interface="popover" style="width: 100%">
+                    <ion-option value="M">Masculino</ion-option>
+                    <ion-option value="F">Femenino</ion-option>
+                  </ion-select>
+                </ion-item>
+
+                <div class="boxsing">Fecha de Nacimientp</div>
+                <ion-item class="inp-form date-f">
+                 
+                  <ion-datetime displayFormat="MMM DD, YYYY " [(ngModel)]="Salida"></ion-datetime>
+                </ion-item>
+        
+                <div class="boxsing">Correo Electrónico</div>
+                <ion-item class="inp-form">
+              <ion-input type="mail"></ion-input>
+                </ion-item>
+        
+                <div class="boxsing">Repite Correo Electrónico</div>
+                <ion-item class="inp-form">
+              <ion-input type="mail"></ion-input>
+                </ion-item>
+        
+        
+                <div class="boxsing">Teléfono </div>
+                <ion-item class="inp-form">
+              <ion-input type="mail"></ion-input>
+                </ion-item>
+        
+                <div class="boxsing"> Repite Teléfono </div>
+                <ion-item class="inp-form">
+              <ion-input type="mail"></ion-input>
+                </ion-item>
+          
+                <div style="margin-top:10px">
+                    <button ion-button block color="menu" (click)="fillCompra()" >SIGUIENTE</button>
+                  </div>
+         
+              </div>
+
+
+          
+                                      
+        </div>
+
+
+
+        <div class="datosUser animate-right" *ngIf="DatosCompra">
+            <div class="form-content">
+                <div class="label-form"> 
+                    Datos de Pago
+                  </div>
+
+                  <div class="boxsing">Número de tarjeta</div>
+                  <ion-item class="inp-form">
+                <ion-input type="number"></ion-input>
+                  </ion-item>
+          
+                  <div class="multiline">
+                      <div class="inpcol">
+                    
+                          <div class="boxsing">Fecha de Vencimiento</div>
+                          <ion-item class="inp-form1 date-f">
+ 
+                              <ion-datetime displayFormat="MM YY " [(ngModel)]="FVencimiento"></ion-datetime>
+                            </ion-item>
+                      </div>
+                    
+                      <div class="inpcol">
+                    
+                          <div class="boxsing">Clave de seguridad</div>
+                          <ion-item class="inp-form2">
+                              <ion-input type="number"></ion-input>
+                          </ion-item>
+                      </div>
+                    </div>
+
+                    <div style="margin-top:10px">
+                        <button ion-button block color="menu" >COMPRAR</button>
+                      </div>
+
+
+                </div>
+         
+              </div>
+
+  </ion-content>
+
+

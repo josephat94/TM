@@ -5,9 +5,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
+
+import { TabsTuristaPage } from '../pages/tabs-turista/tabs-turista';
+import { TabsPasajePage } from '../pages/tabs-pasaje/tabs-pasaje';
 import { ModalIniPage } from '../pages/modal-ini/modal-ini';
-import { HomeTuristaPage } from '../pages/home-turista/home-turista';
-import { HomePasajePage } from '../pages/home-pasaje/home-pasaje';
 @Component({
   templateUrl: 'app.html'
 })
@@ -28,11 +29,11 @@ goToLogin(){
 }
  goToTurista(){
 
-  this.rootPage=HomeTuristaPage;
+  this.rootPage=TabsTuristaPage;
  }
 
  goToPasaje(){
-   this.rootPage= HomePasajePage;
+   this.rootPage= TabsPasajePage;
  }
 }
 

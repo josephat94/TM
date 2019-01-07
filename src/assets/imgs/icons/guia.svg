@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="222px" height="149px" viewBox="0 0 222 149" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>guía</title>
+    <desc>Created with Sketch.</desc>
+    <g id="DISEÑO-APP-TM" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.3-HOME-PRINCIPAL" transform="translate(-151.000000, -1455.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="375" height="1604"></rect>
+            <g id="MENU-PRINCIPAL" transform="translate(0.000000, 1544.000000)" stroke="#FFFFFF">
+                <g id="GUÍA-DE-VIAJE" transform="translate(230.000000, 11.000000)">
+                    <g id="guía" transform="translate(21.000000, 0.000000)">
+                        <path d="M0.5,1.44139111 L0.5,19.4336089 L7.5,18.5586089 L7.5,0.566391109 L0.5,1.44139111 Z" id="Rectangle"></path>
+                        <path d="M7.5,0.568620961 L7.5,18.5586089 L14.5,19.4336089 L14.5,1.43357362 L8.00448893,0.504522469 L7.5,0.568620961 Z" id="Rectangle-Copy"></path>
+                        <path d="M14.5,1.44139111 L14.5,19.435703 L14.9983693,19.4957158 L21.5,18.5663869 L21.5,0.566391109 L14.5,1.44139111 Z" id="Rectangle-Copy-2"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

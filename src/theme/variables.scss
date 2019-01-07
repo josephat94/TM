@@ -38,11 +38,14 @@ $app-direction: ltr;
 $fondo_primary:    rgba(241,239,237,1);
 $fondo_secondary:rgba(230,227,223,1);
 $verde: rgba(5,40,47,1);
-
+$dorado: #9F866B;
+$verdeOscuro:#01111A;
 
 $colors: (
-  primary:    $verde,
+  primary:   #01111A,
+  menu: #01111A,
   secondary:  $verde,
+  tabs: #01111A,
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222,

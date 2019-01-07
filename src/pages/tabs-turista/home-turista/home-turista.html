@@ -1,0 +1,164 @@
+
+  <ion-content  class="fondoHome  animate-left">
+
+
+
+<ion-slides pager class="sliderpager">
+
+  <ion-slide class="slide-bg" >
+    <div class="rectangle">
+      LOREM IPSUM
+       </div>
+  </ion-slide>
+
+  <ion-slide class="slide-bg">
+    <div class="rectangle">
+      LOREM IPSUM
+       </div>
+  </ion-slide>
+
+
+
+</ion-slides>
+
+<ion-slides class="slidercards">
+  <ion-slide  class="slidepaq" textcenter *ngFor="let paq of Paqs; let i= index">
+
+      <ion-card class="card-paq">
+        <div class="header-element-card">
+            <div class="text-card">
+                <div class="Title-card">
+                {{paq.name}}
+                  </div>
+                  <div class="ShortDesc-card">Lorem ipsum dolor sit amet, si voluptatum velit.              </div>
+            </div>
+            <div class="like-card">
+              <ion-icon name="custom-like" style="font-size:20px"></ion-icon>
+            </div>
+          </div>
+          <div class="img-card">
+            <img src="./assets/imgs/paq1.png"  alt="">
+          </div>
+          <div class="footer-elements-card">
+            <div class="icons-card">
+              <div class="share">
+                <ion-icon name="custom-share"></ion-icon>
+              </div>
+           
+            </div>  
+            <div class="button-card">
+              <button ion-button color="primary" style="height:30px; width:90px; text-transform: uppercase"> Ver</button>
+            </div>
+          </div>
+        </ion-card>
+  </ion-slide>
+
+
+
+
+</ion-slides>
+
+<div class="list-box"> 
+  <h3 >Hospedaje</h3>
+
+  <div *ngFor="let hotel of Hotels; let i= index" class="hotel">
+
+    <div class="image">
+      <img src="./assets/imgs/01.png" width="100%" alt="">
+    </div>
+    <div class="info">
+      <div class="nombre">Nombre del Hotel</div>
+<div class="start"></div>
+<div class="short-desc"> Lorem ipsum dolor sit amet consectetur.</div>
+<div class="foo">
+  <div class="circle">9.5</div>
+  <div class="text">Muy bueno</div>
+</div>
+    </div>
+
+    <div class="actions" style="padding-top: 8px; padding-bottom: 8px">
+        <img src="./assets/imgs/icon-map.svg" alt="">
+      <img src="./assets/imgs/icon-phone.svg" alt="">
+
+    </div>
+  </div>
+
+  <div style="width: 100%; display: flex; justify-content: center;">
+  <button ion-button color="primary" style="width: 127px; height: 35px;"> VER MAS</button>
+  </div>
+</div>
+
+<div class="listbox-rest">
+    <h3 >Restaurantes</h3>
+
+
+<div class="fila" >
+  <div class="rest">
+    <div class="image">
+      <img src="./assets/imgs/rest-01.png"   alt="">
+    </div>
+    <div class="nombre">Mombre del restaurante</div>
+    <div class="raiting">
+     <img src="./assets/imgs/star-on.svg" alt="">
+     <img src="./assets/imgs/star-on.svg" alt="">
+     <img src="./assets/imgs/star-on.svg" alt="">
+    </div>
+    <div class="desc">
+      Lorem ipsum dolor siamet consectetur.
+    </div>
+  </div>
+  <div class="rest">
+      <div class="image">
+        <img src="./assets/imgs/rest-02.png"   alt="">
+      </div>
+      <div class="nombre">Mombre del restaurante</div>
+      <div class="raiting">
+       <img src="./assets/imgs/star-on.svg" alt="">
+       <img src="./assets/imgs/star-on.svg" alt="">
+       <img src="./assets/imgs/star-on.svg" alt="">
+      </div>
+      <div class="desc">
+        Lorem ipsum dolor siamet consectetur.
+      </div>
+    </div>
+</div>
+
+<div class="fila" >
+    <div class="rest">
+      <div class="image">
+        <img src="./assets/imgs/rest-03.png"   alt="">
+      </div>
+      <div class="nombre">Mombre del restaurante</div>
+      <div class="raiting">
+       <img src="./assets/imgs/star-on.svg" alt="">
+       <img src="./assets/imgs/star-on.svg" alt="">
+       <img src="./assets/imgs/star-on.svg" alt="">
+      </div>
+      <div class="desc">
+        Lorem ipsum dolor siamet consectetur.
+      </div>
+    </div>
+    <div class="rest">
+        <div class="image">
+          <img src="./assets/imgs/rest-04.png"   alt="">
+        </div>
+        <div class="nombre">Nombre del restaurante</div>
+        <div class="raiting">
+         <img src="./assets/imgs/star-on.svg" alt="">
+         <img src="./assets/imgs/star-on.svg" alt="">
+         <img src="./assets/imgs/star-on.svg" alt="">
+        </div>
+        <div class="desc">
+          Lorem ipsum dolor siamet consectetur.
+        </div>
+      </div>
+  </div>
+  <div style="width: 100%; display: flex; justify-content: center;">
+      <button ion-button color="primary" style="width: 127px; height: 35px;"> VER MAS</button>
+      </div>
+</div>
+
+
+  
+  </ion-content>
+

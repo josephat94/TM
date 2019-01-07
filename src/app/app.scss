@@ -110,7 +110,6 @@
   }
 }
 
-
 //Estilos globales de Ionic
 
 .toolbar-ios ion-title {
@@ -131,27 +130,231 @@
   width: 18px;
   height: 18px;
   background: transparent;
-  border: 1px solid #01111A !important;  border: 1px solid #01111A !important;
+  border: 1px solid #01111a !important;
+  border: 1px solid #01111a !important;
   opacity: 1;
   pointer-events: auto;
 }
 
 .swiper-pagination-bullet-active {
-  background: rgba(5,40,47,1);
-  border: 0px solid #01111A !important;
+  background: rgba(5, 40, 47, 1);
+  border: 0px solid #01111a !important;
   opacity: 1;
-  animation: gu .2s;
+  animation: gu 0.2s;
 }
 
 //Animations////
-.spin{animation:w3-spin 2s infinite linear}@keyframes w3-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
-.animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
-.animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
-.animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
-.animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
-.animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
-.animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
-.animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
-.animate-input{transition:width 0.4s ease-in-out}.w3-animate-input:focus{width:100%!important}
-.opacity,.w3-hover-opacity:hover{opacity:0.60}.w3-opacity-off,.w3-hover-opacity-off:hover{opacity:1}
-.opacity-max{opacity:0.25}.w3-opacity-min{opacity:0.75}
+.spin {
+  animation: w3-spin 2s infinite linear;
+}
+@keyframes w3-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+.animate-fading {
+  animation: fading 10s infinite;
+}
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.animate-opacity {
+  animation: opac 0.8s;
+}
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animate-top {
+  position: relative;
+  animation: animatetop 0.4s;
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+.animate-left {
+  position: relative;
+  animation: animateleft 0.4s;
+}
+@keyframes animateleft {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+.animate-right {
+  position: relative;
+  animation: animateright 0.4s;
+}
+@keyframes animateright {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+.animate-bottom {
+  position: relative;
+  animation: animatebottom 0.4s;
+}
+@keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+.animate-zoom {
+  animation: animatezoom 0.6s;
+}
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.animate-input {
+  transition: width 0.4s ease-in-out;
+}
+.w3-animate-input:focus {
+  width: 100% !important;
+}
+.opacity,
+.w3-hover-opacity:hover {
+  opacity: 0.6;
+}
+.w3-opacity-off,
+.w3-hover-opacity-off:hover {
+  opacity: 1;
+}
+.opacity-max {
+  opacity: 0.25;
+}
+.w3-opacity-min {
+  opacity: 0.75;
+}
+
+//Menu
+
+.tool-menu {
+  height: 102px;
+  background: transparent !important;
+}
+.content-side-menu {
+  background: #01111a;
+  font-family: "Montserrat", sans-serif !important;
+
+  .bar-buttons-ios {
+    background: #01111a;
+    border-bottom: 1px solid #0d2736;
+    color: #fff !important;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+
+  .bar-buttons-md {
+    background: #01111a;
+    border-bottom: 1px solid #0d2736;
+    color: #fff !important;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+  .list-ios > .item-block:last-child,
+  .list-ios > .item-wrapper:last-child .item-block {
+    border-bottom: 1px solid #0d2736;
+    background: #01111a;
+    color: #fff !important;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+
+  .list-md > .item-block:last-child,
+  .list-md > .item-wrapper:last-child .item-block {
+    border-bottom: 1px solid #0d2736;
+    background: #01111a;
+    color: #fff !important;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+}
+
+//Icons
+ion-icon {
+  &[class*="custom-"] {
+    mask-size: contain;
+
+    mask-position: 50% 50%;
+
+    mask-repeat: no-repeat;
+
+    background: currentColor;
+
+    width: 1em;
+
+    height: 1em;
+  }
+  &[class*="custom-like"] {
+    mask-image: url(../assets/imgs/icons/cora.png);
+  }
+  &[class*="custom-destinos"] {
+    mask-image: url(../assets/imgs/icons/destinoss.svg);
+  }
+  &[class*="custom-guia"] {
+    mask-image: url(../assets/imgs/icons/guiaa.svg);
+  }
+
+  &[class*="custom-mas"] {
+    mask-image: url(../assets/imgs/icons/mass.svg);
+  }
+  &[class*="custom-paquetes"] {
+    mask-image: url(../assets/imgs/icons/paquetess.svg);
+  }
+  &[class*="custom-rutas"] {
+    mask-image: url(../assets/imgs/icons/RUTAS.svg);
+  }
+  &[class*="custom-share"] {
+    mask-image: url(../assets/imgs/icons/share.svg);
+  }
+}

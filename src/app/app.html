@@ -1,10 +1,10 @@
 <ion-menu id="Pasajero" [content]="mycontent" side="right">
     <ion-header color="primary">
-        <ion-toolbar color="primary">
+        <ion-toolbar class="tool-menu" color="menu">
           <ion-title>Menu Pasaje</ion-title>
         </ion-toolbar>
       </ion-header>
-      <ion-content>
+      <ion-content  class="content-side-menu">
         <ion-list>
           <button ion-item menuToggle (click)="goToLogin()" >
             Iniciar Sesión
@@ -28,28 +28,32 @@
 
 
   <ion-menu id="Turista" [content]="mycontent" side="right">
-      <ion-header color="primary">
-          <ion-toolbar color="primary">
-            <ion-title>Menu Turista</ion-title>
+      <ion-header >
+          <ion-toolbar  class="tool-menu" color="menu">
+           <ion-row>
+             <ion-col style="display: flex; justify-content: flex-end; padding-right: 10px">
+              <img src="./assets/imgs/logoTrenMaya.png" width="120px" height="45px" alt="" style="display: flex">
+             </ion-col>
+           </ion-row>
           </ion-toolbar>
         </ion-header>
-        <ion-content>
+        <ion-content class="content-side-menu">
           <ion-list>
-            <button ion-item menuToggle (click)="goToLogin()" >
+            <button ion-item menuToggle end (click)="goToLogin()" >
               Iniciar Sesión
             </button>
-            <button ion-item menuToggle >
-              Rutas
+            <button ion-item menuToggle end (click)="goToPasaje()" >
+              Comprar Pasajes
             </button>
-            <button ion-item menuToggle >
-              Events
+            <button ion-item menuToggle end >
+              Contacto
             </button>
 
-            <button ion-item menuToggle  (click)="goToPasaje()" >
-                Modo Pasaje
+            <button ion-item menuToggle end   >
+                Embajadas
               </button>
-            <button ion-item menuToggle >
-              Close Menu
+            <button ion-item menuToggle end >
+              SOS
             </button>
           </ion-list>
         </ion-content>

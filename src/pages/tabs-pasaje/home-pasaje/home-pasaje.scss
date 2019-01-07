@@ -1,0 +1,101 @@
+@import "../../../theme/variables.scss";
+page-home-pasaje {
+
+    background: #F1EFED;;
+
+    select-popover ion-list {
+        margin: -1px 0;
+        width: 3000px;
+    }
+.form-content{
+
+    width: 100%;
+  
+    background: transparent;
+    padding: 10px 38px 18px 38px;
+    display: flex;
+    flex-direction: column;
+
+    .label-form{
+        padding: 5px;
+        font-size: 15px;
+    }
+    .boxsing{
+        padding-left: 17px;
+        color: #1F1E1D;	font-family: Montserrat;	font-size: 12px;	font-weight: 300;	line-height: 13px;
+    margin-bottom: 5px;
+    }
+    .inp-form{
+        width: 100%;          height:41px;
+           background-color: #DCD8D4;
+           margin-bottom: 10px;
+    }
+    .toggle-form{
+        margin-top: 10px;
+        width: 300px;
+        height:41px;
+        background-color: transparent;
+        margin-bottom: 10px;
+    }
+.multiline{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .inpcol{
+        display: flex;
+        flex-direction: column;
+
+        .boxsing{
+            padding-left: 17px;
+            color: #1F1E1D;	font-family: Montserrat;	font-size: 12px;	font-weight: 300;	line-height: 13px;
+        margin-bottom: 5px;
+        }
+        .inp-form{
+            width: 140px;
+               height:41px;
+               background-color: #DCD8D4;
+               margin-bottom: 10px;
+        }
+        .inp-form1{
+            width: 162px;
+               height:41px;
+               background-color: #DCD8D4;
+               margin-bottom: 10px;
+        }
+        .inp-form2{
+            display: flex;
+            align-self: flex-end;
+            width: 110px;
+               height:41px;
+               background-color: #DCD8D4;
+               margin-bottom: 10px;
+        }
+
+    }
+}
+    ion-select{
+        max-width: 99%;
+    }
+}
+
+.date-f::before{
+
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: red;
+    right: 10px;
+    background-image: url(/assets/imgs/calendar.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.arrow-back{
+    position: absolute;
+    top: 0px;
+width: 100%;margin-top: 10px;; display: flex; justify-content: flex-start; padding: 0px 17px 17px 0px;padding-left: 17px;
+align-items: center;
+}
+}

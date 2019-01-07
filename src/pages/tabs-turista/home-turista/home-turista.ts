@@ -14,8 +14,9 @@ import { IonicPage, NavController, NavParams, MenuController } from 'ionic-angul
   templateUrl: 'home-turista.html',
 })
 export class HomeTuristaPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams, public menuCtrl: MenuController) {
+Paqs=[{name:"Paquete todo en 1", url:'paq1.png'}, {name:"Paquete básico", url:'paq1.png'}, {name:"Paquete doble", url:'paq1.png'}]
+Hotels=[{name:1},{name:1},{name:1}]
+constructor(public navCtrl: NavController, public navParams: NavParams, public menuCtrl: MenuController) {
   }
 
   ionViewDidLoad() {

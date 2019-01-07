@@ -3,6 +3,33 @@ page-modal-ini {
   background: $verde;
   display: flex !important;
   align-items: center !important;
+
+
+
+  //BULLETS SLIDERS
+  .swiper-pagination-bullet {
+    border-radius: 50%;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: transparent;
+    border: 1px solid #01111a !important;
+    border: 1px solid #01111a !important;
+    opacity: 1;
+    pointer-events: auto;
+    position: relative;
+    bottom: 100px;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: rgba(5, 40, 47, 1);
+    border: 0px solid #01111a !important;
+    opacity: 1;
+    animation: gu 0.2s;
+
+  }
+
+
   .contentmodal {
     margin-top: 2vh;
     background: #f1efed;
@@ -38,5 +65,18 @@ button{
   background-position: center;
  background-repeat: no-repeat;
 }
+.text-normal{
+  color: #837F7E;	font-family: Montserrat;	font-size: 16px;	line-height: 18px;	text-align: center;}
+  .text-gold{
+    margin-top: 60px;
+    	color: #9F866B;	font-family: Montserrat;	font-size: 30px;	letter-spacing: 3px;	line-height: 37px;	text-align: center;
+  }
+  .text-bold{
+
+    color: #464A40;	font-family: Montserrat;	font-size: 40px;	font-weight: 500;	letter-spacing: 4px;	line-height: 49px;	text-align: center;
+  }
+  .line{
+    height: 2px;	width: 132px;	border: 1px solid #464A40;
+  }
 
 }

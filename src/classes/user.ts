@@ -1,7 +1,7 @@
 export default class User {
-lang: string;
+lang: any;
 token: string;
-constructor(lang="ENG", token="1234JASDFKNCan1234ASOLSDFN"){
+constructor(lang={name: "English", id:"ENG"}, token="1234JASDFKNCan1234ASOLSDFN"){
     this.lang=lang;
     this.token=token
 }

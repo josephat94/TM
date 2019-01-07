@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController, AlertController } from 'ionic-angular';
+import { UserInfoProvider } from '../../providers/user-info/user-info';
+import User from '../../classes/user';
 
 /**
  * Generated class for the LangPage page.
@@ -16,7 +18,7 @@ import { IonicPage, NavController, NavParams, ViewController, AlertController } 
 export class LangPage {
 Langs= [{name: "English", id:"Eng"},{name: "Spanish", id:"Esp"},{name: "Chinese", id:"Chin"},{name: "German", id:"Ger"},{name: "French", id:"Fre"}, {name: "Portuguese", id:"Port"}, {name: "Japanese", id:"Jap"}]
 LangSelected=null;
-constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController, public alertCtrl: AlertController) {
+constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController, public alertCtrl: AlertController, public __userInfo: UserInfoProvider) {
   }
 
   ionViewDidLoad() {
@@ -46,6 +48,8 @@ constructor(public navCtrl: NavController, public navParams: NavParams, public v
             text: 'Ok',
             handler: data => {
               this.LangSelected= this.Langs[0];
+              let user: User= new User();
+              this.__userInfo.setUser(user);
               console.log('Saved clicked');
               this.viewCtrl.dismiss({lang:this.LangSelected});
             }
@@ -54,6 +58,9 @@ constructor(public navCtrl: NavController, public navParams: NavParams, public v
       });
       alert.present();
     }else{
+      let user: User= new User(this.LangSelected);
+      this.__userInfo.setUser(user);
+
       this.viewCtrl.dismiss({lang:this.LangSelected});
     }
    

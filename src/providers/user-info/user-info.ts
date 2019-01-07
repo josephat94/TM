@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage';
 import User from '../../classes/user';
+import { resolveDefinition } from '@angular/core/src/view/util';
 /*
   Generated class for the UserInfoProvider provider.
 
@@ -17,10 +18,10 @@ User: User;
 
 setUser(user:User){
 
-  this.storage.set('user-data', user);
+  this.storage.set('user_data', user);
   
 
-  this.storage.get('user-data').then((user)=>{
+  this.storage.get('user_data').then((user)=>{
     this.User= user;
 
     
@@ -29,7 +30,20 @@ setUser(user:User){
 
 
 getUser(){
-  return this.User;
+
+  let prom = new Promise((resolve, reject)=>{
+
+    this.storage.get('user_data').then((user)=>{
+this.User= user;
+resolve(user);
+    }).catch((e)=>{
+  reject(e);
+    })
+  })
+
+
+
+  return prom;
 }
 
 }

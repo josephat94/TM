@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="145px" viewBox="0 0 150 145" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>MENU</title>
+    <desc>Created with Sketch.</desc>
+    <g id="DISEÑO-APP-TM" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.3-HOME-PRINCIPAL" transform="translate(-225.000000, -1459.000000)" fill="#FFFFFF">
+            <rect x="0" y="0" width="375" height="1604"></rect>
+            <g id="MENU-PRINCIPAL" transform="translate(0.000000, 1544.000000)" fill-rule="nonzero">
+                <g id="MENU" transform="translate(305.000000, 15.000000)">
+                    <g transform="translate(20.000000, 0.000000)">
+                        <rect id="Rectangle" x="0" y="0" width="25" height="1.27272727"></rect>
+                        <rect id="Rectangle-Copy" x="0" y="6.36363636" width="25" height="1.27272727"></rect>
+                        <rect id="Rectangle-Copy-2" x="0" y="12.7272727" width="25" height="1.27272727"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

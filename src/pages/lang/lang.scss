@@ -11,4 +11,14 @@ page-lang {
   button{
     text-transform: uppercase !important;
   }
+
+  .btn-lang{
+    position: absolute;
+    bottom: -5px;
+    width: 102%;
+    height: 50px;;
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
 }

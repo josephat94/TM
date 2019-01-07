@@ -1,4 +1,4 @@
-<ion-content class="contentlang">
+<ion-content class="contentlang" style="position: relative;">
   <ion-row style="height:50px; padding:1rem; font-size: 18px; text-transform: uppercase; display: flex; align-items: center;margin-top: 30px">
     <ion-col>
       Language
@@ -10,11 +10,7 @@
       <label [for]="lang.name">{{lang.name}}</label>
     </ion-col>
   </ion-row>
-  <ion-row *ngIf="LangSelected!=null" style="margin-top: 20px;">
-    <ion-col>
-      <button color="primary" ion-button block class="animate-gu" (click)="closeModal()">
+      <button *ngIf="LangSelected!=null" class="btn-lang" color="primary" ion-button  class="animate-gu btn-lang" (click)="closeModal()">
         Next
-      </button>
-    </ion-col>
-  </ion-row>
+</button>
 </ion-content>

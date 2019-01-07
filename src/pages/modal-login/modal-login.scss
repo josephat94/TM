@@ -1,3 +1,79 @@
 page-modal-login {
 
+    .form-content{
+
+        width: 100%;
+      
+        background: transparent;
+        padding: 10px 38px 18px 38px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    
+        .label-form{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+          
+            font-size: 15px;
+        }
+        .boxsing{
+            padding-left: 17px;
+            color: #1F1E1D;	font-family: Montserrat;	font-size: 12px;	font-weight: 300;	line-height: 13px;
+        margin-bottom: 5px;
+        }
+        .inp-form{
+            width: 100%;          height:41px;
+               background-color: #DCD8D4;
+               margin-bottom: 10px;
+        }
+        .toggle-form{
+            margin-top: 10px;
+            width: 300px;
+            height:41px;
+            background-color: transparent;
+            margin-bottom: 10px;
+        }
+    .multiline{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .inpcol{
+            display: flex;
+            flex-direction: column;
+    
+            .boxsing{
+                padding-left: 17px;
+                color: #1F1E1D;	font-family: Montserrat;	font-size: 12px;	font-weight: 300;	line-height: 13px;
+            margin-bottom: 5px;
+            }
+            .inp-form{
+                width: 140px;
+                   height:41px;
+                   background-color: #DCD8D4;
+                   margin-bottom: 10px;
+            }
+            .inp-form1{
+                width: 162px;
+                   height:41px;
+                   background-color: #DCD8D4;
+                   margin-bottom: 10px;
+            }
+            .inp-form2{
+                display: flex;
+                align-self: flex-end;
+                width: 110px;
+                   height:41px;
+                   background-color: #DCD8D4;
+                   margin-bottom: 10px;
+            }
+    
+        }
+    }
+        ion-select{
+            max-width: 99%;
+        }
+    }
+    
 }

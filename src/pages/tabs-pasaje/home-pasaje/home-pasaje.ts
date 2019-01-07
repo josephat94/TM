@@ -14,8 +14,14 @@ import { IonicPage, NavController, NavParams, MenuController } from 'ionic-angul
   templateUrl: 'home-pasaje.html',
 })
 export class HomePasajePage {
-
+redondo:boolean= false;
+DatosUser= false;
+DatosViaje=true;
+DatosCompra=false;
+escalas:any[]=[];
   constructor(public navCtrl: NavController, public navParams: NavParams, public menuCtrl: MenuController) {
+  this.DatosUser=false;
+  this.DatosCompra=false;
   }
 
   ionViewDidLoad() {
@@ -23,5 +29,31 @@ export class HomePasajePage {
     this.menuCtrl.enable(false, 'Turista');
     console.log('ionViewDidLoad HomePasajePage');
   }
+  fillUserData(){
+this.DatosViaje=false;
+    this.DatosUser=true;
+  }
 
+  fillCompra(){
+    this.DatosUser=false;
+    this.DatosViaje=false;
+    this.DatosCompra=true;
+  }
+back(opc){
+  switch(opc){
+    case 1: 
+    
+    this.DatosViaje=false;
+    this.DatosCompra=false;
+    this.DatosUser=true;
+    break;
+
+    case 2:
+    this.DatosUser=false;
+    this.DatosCompra=false;
+    this.DatosViaje=true;
+   
+    break;
+  }
+}
 }

@@ -6,19 +6,32 @@
   <ion-slides pager>
 
     <ion-slide class="Pasaje">
-      <h2 class="header">Pasaje</h2>
-      <p>
-       Modo Pasaje te permite comprar boletos eletrónicos del tren para utilizar el servicio como medio de transporte.
-      </p>
+     
+      <div class="text-normal"> 
+          Modo Pasajero te permite comprar boletos eletrónicos del tren para utilizar el servicio como medio de transporte.
+      </div>
+     
+      <div class="text-gold">REGISTRARME</div>
+      <div class="text-bold">COMO</div>
 
-      <button ion-button color="primary" (click)="goToHomePasaje()" > COMPRAR BOLETOS </button>
+
+      <div style="width: 100%; display: flex; justify-content: center;">
+          <div class="line"></div>
+      </div>
+ 
+      <button ion-button color="primary" (click)="goToHomePasaje()" > PASAJERO </button>
     </ion-slide>
 
-    <ion-slide class="Turista">
-      <h2 class="header">Turista</h2>
-      <p>Modo Turista te permite comprar boletos y paquetes especiales para disfrutar de los diferentes destinos de la ruta del Tren Maya.</p>
-   
-      <button ion-button color="primary" (click)="goToHomeTurista()" > VER PAQUETES </button>
+    <ion-slide class="Pasaje">
+      
+      <div class="text-normal">Modo Turista te permite comprar boletos y paquetes especiales para disfrutar de los diferentes destinos de la ruta del Tren Maya.</div>
+        <div class="text-gold">REGISTRARME</div>
+        <div class="text-bold">COMO</div>
+  
+   <div style="width: 100%; display: flex; justify-content: center;">
+     <div class="line"></div>
+   </div>
+      <button ion-button color="primary" (click)="goToHomeTurista()" > TURISTA </button>
     </ion-slide>
 
 

@@ -1,109 +1,60 @@
+<ion-content style=" background: #F1EFED;">
+    <div class="form-content">
+        <div class="label-form"> 
+          Registráte
+          </div>
+    <div class="boxsing">Nombre</div>
+    <ion-item class="inp-form">
+  <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <div class="boxsing">Apellido</div>
+    <ion-item class="inp-form">
+  <ion-input type="text"></ion-input>
+    </ion-item>
+    <div class="boxsing">Correo Electrónico</div>
+    <ion-item class="inp-form">
+  <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <div class="boxsing">Teléfono</div>
+    <ion-item class="inp-form">
+  <ion-input type="text"></ion-input>
+    </ion-item>
 
 
-<ion-header>
+    <div class="boxsing">País</div>
+    <ion-item class="inp-form">
+      <ion-select [(ngModel)]="Sexo" interface="popover" style="width: 100%">
+        <ion-option value="M">Mexico</ion-option>
+        <ion-option value="F">Estados Unidos</ion-option>
+      </ion-select>
+    </ion-item>
 
- <!-- <ion-buttons>
-    <button ion-button icon-only left>
-      <ion-icon name="md-arrow-back"> </ion-icon>
-    </button>
-  </ion-buttons>-->
-  <ion-navbar color="primary">
-    <ion-title>
-     Regístrate
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-
-
-  
-<ion-row style="margin-top: 5px">
-  <ion-col>
-
-      <ion-list>
-
-          <ion-item>
-              <ion-input type="text" placeholder="Nombre de usuario"></ion-input>
-            </ion-item>
-          </ion-list>
-    </ion-col></ion-row>
-
-      
-<ion-row style="margin-top: 5px">
-  <ion-col>
-
-      <ion-list>
-
-          <ion-item>
-              <ion-input type="text" placeholder="Correo Electrónico"></ion-input>
-            </ion-item>
-          </ion-list>
-    </ion-col></ion-row>
-
-    <ion-row   style="margin-top: 5px">
-      <ion-col>
     
-          <ion-list>
-    
-              <ion-item>
-                  <ion-input type="text" placeholder="País"></ion-input>
-                </ion-item>
-              </ion-list>
-        </ion-col></ion-row>
 
-<ion-row>
-  <ion-col>
-      <ion-list>
-          <ion-item>
-          <ion-input type="password" placeholder="Contraseña"></ion-input>
-        </ion-item>
-  </ion-list>
+    <div class="boxsing">Categoría</div>
+    <ion-item class="inp-form">
+      <ion-select [(ngModel)]="Sexo" interface="popover" style="width: 100%">
+        <ion-option value="Pasajero">Pasajero</ion-option>
+        <ion-option value="Turista">Turista</ion-option>
+      </ion-select>
+    </ion-item>
 
-</ion-col>
+    <div class="boxsing">Contraseña</div>
+    <ion-item class="inp-form">
+  <ion-input type="password"></ion-input>
+    </ion-item>
 
-</ion-row>
+    <div class="boxsing">Repita Contraseña</div>
+    <ion-item class="inp-form">
+  <ion-input type="password"></ion-input>
+    </ion-item>
 
-<ion-row>
-  <ion-col>
-      <ion-list>
-          <ion-item>
-          <ion-input type="password" placeholder="Repite tu contraseña"></ion-input>
-        </ion-item>
-  </ion-list>
+    <div style="margin-top:10px; display: flex; flex-direction:column;align-items: center;">
+        <button ion-button block color="menu" (click)="closeModal()">CREAR CUENTA</button>
+        <span style="margin-top:10px;">Cancelar</span>
+      </div>
 
-</ion-col>
-
-</ion-row>
-
-<ion-row>
-<ion-col text-center>
-
-    <button ion-button color="primary" block (click)="closeModal()" >   CREAR CUENTA     </button>
-
-
-</ion-col>
-
-</ion-row>
-
-<ion-row>
-  <ion-col text-center>
-  
-      <button ion-button color="google" block  >   REGISTRATE CON GOOGLE     </button>
-  
-  
-  </ion-col>
-  
-  </ion-row>
-
-  <ion-row>
-    <ion-col text-center>
-    
-        <button ion-button color="facebook" block  >   REGISTRATE CON FACEBOOK</button>
-    
-    
-    </ion-col>
-    
-    </ion-row>
-
+</div>
 </ion-content>

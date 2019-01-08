@@ -162,7 +162,69 @@
 
 
         <div class="datosUser animate-right" *ngIf="DatosCompra">
-            <div class="form-content">
+          
+          <div class="form-content-info">
+              <div class="label-form"> 
+                  Datos de Pedido
+                </div>
+            <div class="row-info"> 
+              <div class="col-info ">
+                  <div class="label">
+                      Nombre Cliente
+                    </div>
+                    <div class="name">Josephat Reyes Ordaz</div>
+              </div>
+
+              <div class="col-info final">
+                  <div class="label">Fecha</div>
+                  <div class="name">24/12/19</div>
+                </div>
+           
+            </div>
+
+            <div class="row-info">
+            <div class="col-info">
+              <div class="label">Origen</div>
+             
+             <div class="name">Origen</div> 
+            </div>
+            <div class="col-info final" style="justify-content: flex-end;">
+              <div class="label">Destino</div>
+              <div class="name">Destino</div>
+
+            </div>
+          </div>
+            <div class="row-info">
+              <div class="col-info">
+                <div class="label">Número de personas</div>
+                <div class="name">4</div>
+              </div>
+              <div class="col-info final">
+                <div class="label">Hora</div>
+                <div class="name">10:00 hrs </div>
+              </div>
+
+            </div>
+            <div class="row-info">
+                <div class="col-info">
+                  <div class="label">Correo</div>
+                  <div class="name">correo@correo.com</div>
+                </div>
+                <div class="col-info final">
+                  <div class="label">Télefono</div>
+                  <div class="name">7771231231 </div>
+                </div>
+  
+              </div>
+
+              <div style="margin-top:20px" *ngIf="!AcceptedData">
+                  <button ion-button block color="menu" (click)="AcceptData()" >CONTINUAR</button>
+                </div>
+          </div>
+
+
+          
+          <div *ngIf="AcceptedData" class="form-content-tarjeta animate-bottom">
                 <div class="label-form"> 
                     Datos de Pago
                   </div>
@@ -184,7 +246,7 @@
                     
                       <div class="inpcol">
                     
-                          <div class="boxsing">Clave de seguridad</div>
+                          <div class="boxsing">CCV</div>
                           <ion-item class="inp-form2">
                               <ion-input type="number"></ion-input>
                           </ion-item>

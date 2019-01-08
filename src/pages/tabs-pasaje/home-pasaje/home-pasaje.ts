@@ -18,6 +18,7 @@ redondo:boolean= false;
 DatosUser= false;
 DatosViaje=true;
 DatosCompra=false;
+AcceptedData=false;
 escalas:any[]=[];
   constructor(public navCtrl: NavController, public navParams: NavParams, public menuCtrl: MenuController) {
   this.DatosUser=false;
@@ -38,6 +39,10 @@ this.DatosViaje=false;
     this.DatosUser=false;
     this.DatosViaje=false;
     this.DatosCompra=true;
+  }
+
+  AcceptData(){
+    this.AcceptedData=true;
   }
 back(opc){
   switch(opc){

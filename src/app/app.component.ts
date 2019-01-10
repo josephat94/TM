@@ -9,11 +9,12 @@ import { LoginPage } from '../pages/login/login';
 import { TabsTuristaPage } from '../pages/tabs-turista/tabs-turista';
 import { TabsPasajePage } from '../pages/tabs-pasaje/tabs-pasaje';
 import { ModalIniPage } from '../pages/modal-ini/modal-ini';
+import { RutasPage } from '../pages/rutas/rutas';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = ModalIniPage; //HomePage;
+  rootPage:any = RutasPage; //HomePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

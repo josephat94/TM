@@ -9,12 +9,10 @@
           <button ion-item menuToggle (click)="goToLogin()" >
             Iniciar Sesión
           </button>
-          <button ion-item menuToggle >
+          <button ion-item menuToggle (click)="goToRutas()" >
             Rutas
           </button>
-          <button ion-item menuToggle >
-            Events
-          </button>
+     
           <button ion-item menuToggle (click)="goToTurista()" >
               Modo Turista
             </button>
@@ -42,13 +40,15 @@
             <button ion-item menuToggle end (click)="goToLogin()" >
               Iniciar Sesión
             </button>
+            <button ion-item menuToggle end (click)="goToRutas()" >
+              Rutas
+            </button>
             <button ion-item menuToggle end (click)="goToPasaje()" >
               Comprar Pasajes
             </button>
             <button ion-item menuToggle end >
               Contacto
             </button>
-
             <button ion-item menuToggle end   >
                 Embajadas
               </button>

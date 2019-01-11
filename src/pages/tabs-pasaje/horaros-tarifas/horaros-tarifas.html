@@ -13,6 +13,170 @@
 </ion-header>
 
 
-<ion-content class=" animate-top" style=" background: #F1EFED;" >
+<ion-content class=" animate-top ctn-tablas" style=" background: #F1EFED;">
+
+  <!--Formulario de busqueda-->
+
+  <ion-row>
+
+    <ion-col>
+      <div class="inpcol">
+
+        <div class="boxsing">Salida</div>
+        <ion-item class="inp-form">
+          <ion-select [(ngModel)]="buscarsalida" interface="action-sheet" style="width: 100%" placeholder="Cancún">
+            <ion-option value="Cancún">Cancún</ion-option>
+            <ion-option value="Puerto Morelos">Puerto Morelos</ion-option>
+            <ion-option value="Playa del Carmen">Playa del Carmen</ion-option>
+
+          </ion-select>
+        </ion-item>
+      </div>
+    </ion-col>
+
+
+  </ion-row>
+  <ion-row>
+
+
+    <button ion-button block color="menu" (click)="buscarH()">Buscar Horarios</button>
+
+
+
+  </ion-row>
+
+
+
+  <div  *ngIf="searching" style="width: 100% ; display: flex; justify-content: center; align-items: center; margin-top: 240px;">
+
+      <ion-spinner></ion-spinner>
+
+  </div>
+
+  <!--Aqui se pintan los horarios-->
+  <div *ngIf="search==true && searching==false">
+
+    <ion-row *ngIf="search" class=" animate-top tableH">
+      <ion-row class="header-table">
+        De {{salida}} a Puerto Morelos
+      </ion-row>
+
+      <table>
+
+        <thead>
+          <tr class="sub-header-table">
+            <th> Salida </th>
+            <th> Llegada Aproximada </th>
+            <th> Pasajero </th>
+            <th> Turista </th>
+          </tr>
+        </thead>
+
+
+        <tbody>
+          <tr *ngFor="let horario of horarios; let i= index">
+            <td> {{horario.salida}} </td>
+            <td style="border-left:1px solid black">{{horario.llegada}}</td>
+            <td style="border-left:1px solid black">{{horario.precioP}}</td>
+            <td style="border-left:1px solid black">{{horario.precioT}}</td>
+          </tr>
+
+
+        </tbody>
+      </table>
+
+
+    </ion-row>
+    <ion-row class="tableH">
+      <ion-row class="header-table">
+        De {{salida}} a Playa del Carmen
+      </ion-row>
+
+      <table>
+
+        <thead>
+          <tr class="sub-header-table">
+            <th> Salida </th>
+            <th> Llegada Aproximada </th>
+            <th> Pasajero </th>
+            <th> Turista </th>
+          </tr>
+        </thead>
+
+
+        <tbody>
+          <tr *ngFor="let horario of horarios; let i= index">
+            <td> {{horario.salida}} </td>
+            <td style="border-left:1px solid black">{{horario.llegada}}</td>
+            <td style="border-left:1px solid black">{{horario.precioP}}</td>
+            <td style="border-left:1px solid black">{{horario.precioT}}</td>
+          </tr>
+
+
+        </tbody>
+      </table>
+
+
+    </ion-row>
+
+    <ion-row class="tableH">
+      <ion-row class="header-table">
+        De {{salida}} a Tulúm
+      </ion-row>
+
+      <table>
+
+        <thead>
+          <tr class="sub-header-table">
+            <th> Salida </th>
+            <th> Llegada Aproximada </th>
+            <th> Pasajero </th>
+            <th> Turista </th>
+          </tr>
+        </thead>
+
+
+        <tbody>
+          <tr *ngFor="let horario of horarios; let i= index">
+            <td> {{horario.salida}} </td>
+            <td style="border-left:1px solid black">{{horario.llegada}}</td>
+            <td style="border-left:1px solid black">{{horario.precioP}}</td>
+            <td style="border-left:1px solid black">{{horario.precioT}}</td>
+          </tr>
+
+
+        </tbody>
+      </table>
+
+
+    </ion-row>
+
+    <ion-row class="tableH">
+      <ion-row class="header-table">
+        De salida a FC Puerto:
+      </ion-row>
+      <table>
+        <thead>
+          <tr class="sub-header-table">
+            <th> Salida </th>
+            <th> Llegada Aproximada </th>
+            <th> Pasajero </th>
+            <th> Turista </th>
+          </tr>
+        </thead>
+
+
+        <tbody>
+          <tr *ngFor="let horario of horarios; let i= index">
+            <td> {{horario.salida}} </td>
+            <td style="border-left:1px solid black">{{horario.llegada}}</td>
+            <td style="border-left:1px solid black">{{horario.precioP}}</td>
+            <td style="border-left:1px solid black">{{horario.precioT}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </ion-row>
+
+  </div>
 
 </ion-content>

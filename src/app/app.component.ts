@@ -10,11 +10,12 @@ import { TabsTuristaPage } from '../pages/tabs-turista/tabs-turista';
 import { TabsPasajePage } from '../pages/tabs-pasaje/tabs-pasaje';
 import { ModalIniPage } from '../pages/modal-ini/modal-ini';
 import { RutasPage } from '../pages/rutas/rutas';
+import { HorarosTarifasPage } from '../pages/tabs-pasaje/horaros-tarifas/horaros-tarifas';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = RutasPage; //HomePage;
+  rootPage:any = ModalIniPage; //HomePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
@@ -36,5 +37,10 @@ goToLogin(){
  goToPasaje(){
    this.rootPage= TabsPasajePage;
  }
+ goToRutas(){
+
+  this.rootPage= RutasPage;
+ }
+
 }
 

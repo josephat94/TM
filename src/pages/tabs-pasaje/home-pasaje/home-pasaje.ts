@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, MenuController } from 'ionic-angular';
+import { MiBoletoPage } from '../mi-boleto/mi-boleto';
 
 /**
  * Generated class for the HomePasajePage page.
@@ -60,5 +61,10 @@ back(opc){
    
     break;
   }
+}
+
+goToBoleto(){
+
+  this.navCtrl.setRoot(MiBoletoPage);
 }
 }

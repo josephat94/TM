@@ -348,8 +348,11 @@ ion-icon {
   &[class*="custom-mas"] {
     mask-image: url(../assets/imgs/icons/mass.svg);
   }
-  &[class*="custom-paquetes"] {
+  &[class*="custom-boleto"] {
     mask-image: url(../assets/imgs/icons/paquetess.svg);
+  }
+  &[class*="custom-paquetes"] {
+    mask-image: url(../assets/imgs/icons/boleto.svg);
   }
   &[class*="custom-rutas"] {
     mask-image: url(../assets/imgs/icons/RUTAS.svg);
